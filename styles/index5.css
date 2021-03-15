@@ -1,0 +1,196 @@
+html {
+	background-image: url("../images/bats.gif");	
+	background-position-x: left;
+	background-position-y: left;
+}
+body {
+	height: 585px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	max-width: 800px;
+	width: 95%;  /* fixed width was 800 */
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+	
+}
+
+/* Header */
+header {
+	height:65px;
+    background-image: -webkit-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: -moz-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: -o-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    padding: .9375em 1.875% .9375em 1.875%;  /* 15 / 16; 15 / 800 x 100 */
+	border-bottom: 2px solid black;
+} 
+header img { 
+	float: left; 
+	padding-right: 1.875%; 
+	width: 10.6%;
+	max-width: 85px;
+	min-width: 40px;
+} 
+
+header h3 {
+	font-size: 110%;
+	padding-bottom: .75em;
+}
+content a{
+	color: orange;
+	margin-left: 20px;
+}
+td content h5{
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.p{
+	margin-left: 20px;
+	font-size: 13px;
+}
+.pp{
+	margin-left: 20px;
+	margin-top: -15px;
+	font-size: 13px;
+}
+.ppp{
+	margin-top: 7px;
+	margin-left: 20px;
+	font-size: 13px;
+}
+.td{
+	width: 160px;
+	color: black;
+	margin-top: -100px;
+	text-decoration: none;
+}
+.a{
+	margin-top: -195px;
+	margin-left: -10px;
+}
+.h1{
+	font-size: 40px;
+	margin: auto;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.h{
+	margin-top: -25px;
+	padding-bottom: 10px;
+	font-size: 125%;
+	margin-left:65px;
+}
+.hh{
+	margin-top: -25px;
+	padding-bottom: 10px;
+	font-size: 125%;
+	margin-left: 20px;
+}
+.img{
+	margin-left: 20px;
+	margin-top: -8px;
+	height: 90px;
+}
+.btn{
+	width: 70%;
+	height: 80%;
+	margin: auto;
+	margin-top: 8px;
+	background-color: orange;
+	text-align: left;
+}
+/* Sidebar */
+table tr td a:hover{
+	color: green;
+}
+table tr td ul a li{
+  list-style-type: none;
+  font-weight: bold;
+}
+
+/* Navigation Bar*/
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  width: -1px;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 40px;
+  margin-left: 5px;
+}
+.topnav a:hover {
+  color: orange;
+}
+
+.topnav a.active {
+    color: orange;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: gray;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Footer */
+footer { 
+	height: 10px;
+	margin-top: -3px;
+	border-top: 2px solid black;
+	padding: .9375em 1.875% .9375em 1.875%;
+    background-image: -webkit-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: -moz-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: -o-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}

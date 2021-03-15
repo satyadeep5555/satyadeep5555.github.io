@@ -1,0 +1,123 @@
+html {
+	background-image: url("../images/bats.gif");	
+	background-position-x: left;
+	background-position-y: left;
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	max-width: 800px;
+	width: 95%;  /* fixed width was 800 */
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+	height:65px;
+    background-image: -webkit-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: -moz-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: -o-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+    padding: .9375em 1.875% .9375em 1.875%;  /* 15 / 16; 15 / 800 x 100 */
+	border-bottom: 2px solid black;
+} 
+header img { 
+	float: left; 
+	padding-right: 1.875%; 
+	width: 10.6%;
+	max-width: 85px;
+	min-width: 40px;
+} 
+
+header h3 {
+	font-size: 110%;
+	padding-bottom: .75em;
+}
+content a{
+	color: orange;
+	margin-left: 20px;
+}
+td content h4{
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.pp{
+	margin-left: 20px;
+	margin-top: -15px;
+}
+.ppp{
+	margin-top: 7px;
+	margin-left: 20px;
+}
+.td{
+	width: 160px;
+	color: orange;
+	margin-top: -100px;
+}
+.a{
+	margin-top: -200px;
+}
+.h1{
+	font-size: 50px;
+	margin: auto;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.h{
+	margin-top: -35px;
+	padding-bottom: 10px;
+	font-size: 135%;
+	margin-left:75px;
+}
+.hh{
+	margin-top: -25px;
+	padding-bottom: 10px;
+	font-size: 135%;
+	margin-left: 20px;
+}
+.p{
+	margin-left: 20px;
+}
+.img{
+	margin-left: 20px;
+	margin-top: -8px;
+	height: 100px;
+}
+/* Sidebar */
+table tr td a:hover{
+	color: green;
+}
+table tr td ul a li{
+  list-style-type: none;
+  font-weight: bold;
+}
+table tr td ul a li::before {
+  list-style-type: none;
+  content: "\2022";
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+/* Footer */
+footer { 
+	height: 10px;
+	margin-top: 10px;
+	border-top: 2px solid black;
+	padding: .9375em 1.875% .9375em 1.875%;
+    background-image: -webkit-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: -moz-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: -o-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}

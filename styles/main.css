@@ -1,0 +1,39 @@
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.6em;
+}
+header img{
+	margin-top: 20px;
+}
+header h1{
+	color: orange;
+	font-style: italic;
+	margin-left: 100px;
+	margin-top: -70px;
+	padding-bottom: 15px;
+	text-shadow: 2px 2px black;
+}
+header h2 {
+	margin-left: 100px;
+	padding-bottom: 15px;
+}
+content ul a{
+	color: orange;
+	font-style: bold;
+}
+content ul a:hover{
+	color: green;
+}
+.h1{
+	font-size: 50px;
+}
+.h{
+	margin-left: 50px;
+	margin-top: -50px;
+	padding-bottom: 10px;
+}
+
+footer{
+	text-align: center;
