@@ -1,0 +1,502 @@
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    background-color: orange;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover:not(.active) {
+    color: #f1f1f1;
+}
+
+.sidenav .active {
+    color: orangered;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.navbar {
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+    display: flex;
+}
+
+.nav-item {
+    border: 2px;
+    padding: 12px;
+    margin: 5px;
+    height: 100%;
+    align-self: center;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+.logo {
+    border: 2px;
+    padding-left: 12px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    width: 12%;
+    /* Four links of equal widths */
+    text-align: center;
+}
+
+.navbar .nav-item:hover {
+    color: black;
+    border: solid orangered 2px;
+}
+
+.navbar .nav-item.active {
+    color: orangered;
+    border: solid orangered 2px;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-logo {
+    height: 30px;
+    align-items: center;
+}
+
+.footer {
+    margin-top: auto;
+    bottom: 0;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    right: 0px;
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+}
+
+.container-2 {
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+}
+
+.data-element {
+    flex: 1;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.show-survey-content {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+}
+
+.show-content {
+    display: flex;
+}
+
+.item2 {
+    margin: auto;
+    width: 100%;
+}
+
+.home-content {
+    background-color: rgb(223, 114, 63);
+}
+
+.home-content2 {
+    background-color: rgba(255, 255, 255, 0.876);
+    color: black;
+}
+
+.updates {
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    height: 100vh;
+    text-align: center;
+    background: orangered;
+    align-items: center;
+}
+
+.latest-updates {
+    margin-left: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 19px;
+}
+
+.search {
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+a:active {
+    background-color: rgb(223, 114, 63);
+    color: white;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.form tr td {
+    font-size: 20px;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-style: bold;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.data-left>table {
+    float: right;
+}
+
+.main-image img {
+    height: 500px;
+}
+
+.latest-updates .header {
+    color: white;
+    top: 0px;
+    text-align: center;
+    background-color: rgb(223, 114, 63);
+}
+
+.latest-updates>marquee {
+    top: 0px;
+    text-align: center;
+    background-color: white;
+}
+
+.title {
+    background-color: rgba(5, 5, 5, 0.329);
+    font-size: 50px;
+    font-weight: 1000;
+    position: relative;
+    text-align: center;
+    color: rgb(223, 114, 63);
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    bottom: 150px;
+    left: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.item1 {
+    transition: 2s;
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    align-self: stretch;
+}
+
+.item3 {
+    width: 50%;
+    margin: auto;
+}
+
+main {
+    padding: 2em;
+    padding-top: 30px;
+    min-height: 100vh;
+}
+
+.registration-page {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: orangered;
+}
+
+.form-control {
+    width: 100%;
+    font-size: 17px;
+}
+
+.table-form td {
+    padding: 10px;
+}
+
+.table-form {
+    margin: auto;
+}
+
+.margin-right {
+    border-left: 1px solid black;
+}
+
+.margin-right-white {
+    border-left: 1px solid white;
+}
+
+input:focus {
+    border: none;
+}
+
+.footer-main {
+    color: orangered;
+    background-color: white;
+    border-top: orangered solid 2px;
+}
+
+.item1>b {
+    text-align: center;
+}
+
+.item1 div {
+    margin: auto;
+}
+
+.table-data {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.table-data td, .table-data th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-data tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-data tr:hover {
+    background-color: #ddd;
+}
+
+.table-data th {
+    padding: 12px 0;
+    background-color: orangered;
+    color: white;
+}
+
+.description-text {
+    margin: auto;
+    padding: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], .submit {
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, .submit:hover {
+    border: orangered solid 2px;
+    color: orangered;
+    background-color: white;
+}
+
+#hero {
+    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../siteimages/main-1.png) center center fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+
+#importantevents {
+    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../siteimages/computerscience.jpg) center center fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+}
+
+#pointsofpride .item1 {
+    display: flex;
+}
+
+#pointsofpride {
+    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../siteimages/ai.jpg) center center fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#programdescription {
+    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../siteimages/cs2.jpg) center center fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#putyourdegreetowork {
+    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../siteimages/computerscience.jpg) center center fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.show-contact {
+    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../siteimages/main-image.jpg) center center fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.show-contact {
+    display: flex;
+    height: 100vh;
+    color: white;
+}
+
+.show-contact div {
+    text-align: center;
+    margin: auto;
+}
+
+.show-contact div div {
+    margin: 10px;
+    padding: 10px;
+}
+
+.career-card h2 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    align-self: stretch;
+}
+
+.transition-card-content {
+    color: white;
+}
+
+.transition-card-content h2, .transition-card-content h3, .transition-card-content strong, .transition-card-content a {
+    color: orangered;
+    text-align: center;
+}
+
+.transition-card-content:hover {
+    transition: all 2s;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border: orangered solid 2px;
+}

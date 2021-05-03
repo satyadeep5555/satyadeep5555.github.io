@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Data</title>
+    <style>
+        td {
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var decode = function (text) {
+            text = text.replace(/\+/g, " ");
+            text = text.replace(/%[a-fA-F0-9]{2}/g,
+                function (text) {
+                    return String.fromCharCode("0x" + text.substr(1, 2));
+                }
+            );
+            return text;
+        }
+
+        var display_data = function () {
+            //alert('-' + location.search + '-');
+            var query = location.search.replace("?", "");
+            if (query == "") return;
+
+            var fields = query.split("&");
+
+            if (fields.length == 0) {
+                document.write("<p>No data was submitted.</p>");
+            } else {
+                document.write("<table class='table-data' style='width:50%'>");
+                document.write("<tr><th colspan=2><h2>Survey Data</h2></th></tr>");
+                var field_parts;
+                let table = "";
+                for (var i in fields) {
+                    field_parts = fields[i].split("=");
+                    field_parts[0] = decode(field_parts[0]);
+                    field_parts[1] = decode(field_parts[1]);
+                    document.write("<tr><td style='color:orangered;'>" + field_parts[0] + "</th>");
+                    document.write("<td>" + (field_parts[1] ? field_parts[1] : "Not Available") + "</td></tr>");
+                    table = table + "<tr><th>" + field_parts[0] + "</th><td>" + field_parts[1] + "</td></tr>";
+                }
+
+                document.write("</table>");
+            }
+        }
+//]]>
+    </script>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+            <a class="logo" href="index.html"><img src="./assets/siteimages/logo.png" class="main-logo"></a>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("sideNav").style.width = "25%";
+            }
+
+            function closeNav() {
+                document.getElementById("sideNav").style.width = "0";
+            }
+        </script>
+        <div class="sidenav shadow" id="sideNav">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><img src="./assets/siteimages/logo.png" class="main-logo"></a>
+            <a href="index.html">Home</a>
+            <a href="programdescription.html">Program Description</a>
+            <a class="active" href="teachingassistance.html">Teaching Assistance</a>
+            <a href="gpacalucator.html">GPA Calcuator</a>
+            <a href="programsofstudy.html">Programs of Study</a>
+            <a href="contactus.html">Contact Us</a>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="show-survey-content" style="border:none">
+            <div class="item2">
+                <script>display_data();</script>
+                <div id="table"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="show-content">
+
+                <div class="item1" style="display: flex;">
+                    <img src="./assets/siteimages/logo.png" style="height:70px;margin: auto;">
+                </div>
+                <div class="item1">
+                    <h2>Contact:</h2>
+                    <b>Lei (Lee) Wu.</b>
+                    <br>Department of Computer Science & Computer Information Systems (CSCI)
+                    <br>College of Science (CoS), Auburn University at Montgomery (AUM)
+                    <br>Office: Goodwyn Hall 310-Q
+                    <br>E-Mail: lwu@aum.edu
+                </div>
+            </div>
+        </div>
+        <div class="footer shadow">
+            <center>© 2020 Copyright:
+                Satyadeep</a></center>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

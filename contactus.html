@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Contact us</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+            <a class="logo" href="index.html"><img src="./assets/siteimages/logo.png" class="main-logo"></a>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("sideNav").style.width = "25%";
+            }
+
+            function closeNav() {
+                document.getElementById("sideNav").style.width = "0";
+            }
+        </script>
+        <div class="sidenav shadow" id="sideNav">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><img src="./assets/siteimages/logo.png" class="main-logo"></a>
+            <a href="index.html">Home</a>
+            <a href="programdescription.html">Program Description</a>
+            <a href="teachingassistance.html">Teaching Assistance</a>
+            <a href="gpacalucator.html">GPA Calcuator</a>
+            <a href="programsofstudy.html">Programs of Study</a>
+            <a class="active" href="contactus.html">Contact Us</a>
+
+        </div>
+
+    </header>
+    <br></br>
+    <main>
+        <div class="show-contact">
+            <div class="transition-card-content">
+                <div>
+                    <img src="./assets/siteimages/logo.png" style="height:70px;">
+                </div>
+                <div>
+                    <b>Lei (Lee) Wu.</b>
+                    <br>Department of Computer Science & Computer Information Systems (CSCI)
+                    <br>College of Science (CoS), Auburn University at Montgomery (AUM)
+                    <br>Office: Goodwyn Hall 310-Q
+                    <br>E-Mail: lwu@aum.edu
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="show-content">
+
+                <div class="item1" style="display: flex;">
+                    <img src="./assets/siteimages/logo.png" style="height:70px;margin: auto;">
+                </div>
+                <div class="item1">
+                    <h2>Contact:</h2>
+                    <b>Lei (Lee) Wu.</b>
+                    <br>Department of Computer Science & Computer Information Systems (CSCI)
+                    <br>College of Science (CoS), Auburn University at Montgomery (AUM)
+                    <br>Office: Goodwyn Hall 310-Q
+                    <br>E-Mail: lwu@aum.edu
+                </div>
+            </div>
+        </div>
+        <div class="footer shadow">
+            <center>© 2020 Copyright:
+                Satyadeep</a></center>
+
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

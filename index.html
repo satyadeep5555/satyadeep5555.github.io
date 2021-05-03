@@ -1,73 +1,170 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Tuxedo Cat Coffee</title>
-    <link type="text/css" rel="stylesheet" href="cafe.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+
+
     <header>
-        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
+        <div class="navbar">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+            <a class="logo" href="index.html"><img src="./assets/siteimages/logo.png" class="main-logo"></a>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("sideNav").style.width = "25%";
+            }
+
+            function closeNav() {
+                document.getElementById("sideNav").style.width = "0";
+            }
+        </script>
+        <div class="sidenav shadow" id="sideNav">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><img src="./assets/siteimages/logo.png" class="main-logo"></a>
+            <a class="active" href="index.html">Home</a>
+            <a href="programdescription.html">Program Description</a>
+            <a href="teachingassistance.html">Teaching Assistance</a>
+            <a href="gpacalucator.html">GPA Calcuator</a>
+            <a href="programsofstudy.html">Programs of Study</a>
+            <a href="contactus.html">Contact Us</a>
+
+        </div>
     </header>
+
     <main>
-        <form id="order_form" name="order_form" action="checkout.html" method="get">
-            <section id="menu">
-            	<h2>Menu</h2>
-            	<p>Click an item to add it to your order.</p>
-				<div class="imgBox"></div>
-            	<ul>
-            		<li><a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="espresso" onmouseover="mouseover(this,this.id);" onmouseout="mouseout(this);" onclick="totalorder(this)"/></a></li>
-            		<li><a href="#"><img id="images/latte_info.jpg" src="images/latte.jpg" alt="latte" onmouseover="mouseover(this,this.id);" onmouseout="mouseout(this);" onclick="totalorder(this)"/></a></li>
-            		<li><a href="#"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="cappuccino" onmouseover="mouseover(this,this.id);" onmouseout="mouseout(this);" onclick="totalorder(this)"/></a></li>
-            		<li><a href="#"><img id="images/coffee_info.jpg" src="images/coffee.jpg" alt="coffee" onmouseover="mouseover(this,this.id);" onmouseout="mouseout(this);" onclick="totalorder(this)"/></a></li>
-            		<li><a href="#"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="biscotti" onmouseover="mouseover(this,this.id);" onmouseout="mouseout(this);" onclick="totalorder(this)"/></a></li>
-            		<li><a href="#"><img id="images/scone_info.jpg" src="images/scone.jpg" alt="scone" onmouseover="mouseover(this,this.id);" onmouseout="mouseout(this);" onclick="totalorder(this)"/></a></li>
-            	</ul>
-            </section>
+        <div class="row">
+            <div class="show-content col">
 
-            <section>
-            	<h2>Your Order</h2>
-            	<section>
-            		<select id="details" name="order" size="6">
-						
-            		</select>
-            		<p id="total">&nbsp;</p>            		
-           		</section>
-            	<section id="buttons">
-           			<a href="./checkout.html"><input type="button" name="place_order" id="place_order" value="Place Order"></a>
-           			<input type="button" name="clear_order" id="clear_order" value="Clear Order" onclick="resett()">				            		
-            	</section>
-            </section>   
-        </form>
-    </main> 
-	<script>
-		var prev;
-		var total=0;
-		var itemdetails="";
-		var itemprice={"espresso":1.95,"latte":2.95,"cappuccino":3.45,"coffee":1.75,"biscotti":1.95,"scone":2.95};
-		function mouseover(curr,url) {
-			prev=curr.src;
-			curr.setAttribute('src', url);
-		  }
-		  
-		  function mouseout(curr) {
-			curr.setAttribute('src',prev);
-		  }
-		  function totalorder(curr){
-			  item=curr.alt;
-			  price=itemprice[item];
-			  total=total+price;
-			  itemdetails+=`<option>$ ${price} - ${item}</option>`;
-			  $("#details").html(itemdetails);
-			  $("#total").html(`Total: $"+${total.toFixed(2)}`);
-		  }
+                <div class="item1" id="hero">
+                    <div class="transition-card-content">
+                        <h2>Mathematics and Computer Science Department</h2>
+                        The Department of Mathematics and Computer Science is a place that brings motivated students,
+                        professors, and professionals together. We train high-quality students to become problem
+                        solvers.
+                        Our
+                        majors are active and engaged in campus life. Students clubs such as Math Club, Computer Science
+                        Club
+                        and Engineering Club are among the most active on campus. This allows us to provide exceptional
+                        future
+                        prospects to all those who study with us or collaborate with us.
+                    </div>
+                </div>
+            </div>
+            <div class="show-content col">
 
-		  function resett(){
-			$("#details").html(undefined);
-			$("#total").html("");
-			itemdetails="";
-			total=0;
-		  }
-	</script>
+                <div class="item1 " id="importantevents">
+                    <div class="transition-card-content">
+                        <h2>Important News and Events</h2>
+
+
+                        <strong> Sonia Kovalevsky Day</strong>
+                        <br>
+                        <p>An annual outreach program to encourage young women to explore mathematics-related careers.
+                            The
+                            event
+                            offers mathematics activities for young women via hands-on workshops and a career panel for
+                            question
+                            & answer. Sponsored by the department and other AUM offices. The Sonia Kovalevsky
+                            Mathematics
+                            High
+                            School Day is an annualprogram of mathematics activities for young women. Sponsored by the
+                            Association for Women in Mathematics (AWM) and Auburn Montgomery's Department of Mathematics
+                            and
+                            Computer Sciences, it is named in honor of Sonia Kovalevsky, who was the first woman to earn
+                            a
+                            doctorate in mathematics in 1874. The event is designed toencourage high school-aged women
+                            to
+                            consider careers in mathematics and the sciences. Sonia Kovalevsky Days have been organized
+                            by
+                            AWM
+                            and institutions around the country since 1985. It is generally held at AUM during the
+                            latter
+                            half
+                            of February or early March.
+                        </p>
+
+                        <strong> Computer Arts and Animation Summer Course </strong>
+                        <p>
+                            AUM has developed a major interactive computer arts training system that applies
+                            Computational
+                            Thinking (CT) with geometrical methods in visual art skill development for young learners.
+                            The
+                            short
+                            course is a great start for students interested in animation and development
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <center>
+            <h2>Student Clubs and Organizations</h2>
+        </center>
+        <div class="show-content">
+            <div class="item1 card transition-card-content">
+                <center> <strong>Mathematics Club</strong></center>
+                <br>
+                Activities include math games, puzzles, discussions of mathematics related problems, etc. Club members
+                form the core of the Math Jeopardy Team! The team usually attends the Southeastern Section of the MAA
+                (Mathematical Association of America) conference and competition.
+            </div>
+            <div class="item1 card transition-card-content">
+                <center> <strong>Computer Club</strong></center>
+                <br>
+                Activities include analyzing/studying codes, developing programming projects, etc. Club members are
+                usually the core members of the team competing in the ACM (Association for Computing Machinery)
+                Southeast USA Regional Intercollegiate Programming Contest. Our computer club is also a student chapter
+                of ACM at AUM.
+            </div>
+            <div class="item1 card transition-card-content">
+                <center> <strong>Engineering ClLub</strong></center>
+                <br>
+                Activities include robotics, radio control plane, etc. Some members are also members of the Math or
+                Computer clubs. The club has an engineering lab. Students use the lab to perform experiments. The lab
+                also houses a Biodiesel system. The system can convert waste cooking oil to biodiesel fuel. There is an
+                annual engineering competition open to students registered in the “Introduction to Engineering” class.
+                WindTurbine, electric motor bike, robotic arms, etc. are some past competition projects.
+
+                Program Description
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="show-content">
+                <div class="item1" style="display: flex;">
+                    <img src="./assets/siteimages/logo.png" style="height:70px;margin: auto;">
+                </div>
+                <div class="item1">
+                    <h2>Contact:</h2>
+                    <b>Lei (Lee) Wu.</b>
+                    <br>Department of Computer Science & Computer Information Systems (CSCI)
+                    <br>College of Science (CoS), Auburn University at Montgomery (AUM)
+                    <br>Office: Goodwyn Hall 310-Q
+                    <br>E-Mail: lwu@aum.edu
+                </div>
+            </div>
+        </div>
+
+        <div class="footer shadow">
+            <center>© 2020 Copyright:
+                Satyadeep</a></center>
+
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </body>
+
 </html>
